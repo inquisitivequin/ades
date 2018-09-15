@@ -1,14 +1,13 @@
-function waitThree() {
-  let ms = 3000 + new Date().getTime();
-  while (new Date() < ms) {}
-  console.log('finish');
-}
+var arr1 = [1, 2, 3];
 
-function clickHans() {
-  console.log('clicked');
-}
+var dub = function(arr) {
+  var arr2 = [];
 
-document.addEventListener('click', clickHans);
+  for (var i = 0; i < arr.length; i++) {
+    arr2.push(arr[i] * 2);
+  }
+  return arr2;
+};
 
-waitThree();
-console.log('fini');
+console.log(arr1);
+console.log(dub(arr1));
