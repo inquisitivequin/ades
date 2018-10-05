@@ -1,13 +1,23 @@
-var arr1 = [1, 2, 3];
+function Person(firstname, lastname) {
+  console.log(this);
+  this.firstname = firstname;
+  this.lastname = lastname;
+}
 
-var dub = function(arr) {
-  var arr2 = [];
+var jerd = new Person('erd', 'jerd');
 
-  for (var i = 0; i < arr.length; i++) {
-    arr2.push(arr[i] * 2);
-  }
-  return arr2;
-};
+console.log(jerd);
 
-console.log(arr1);
-console.log(dub(arr1));
+var b = 4;
+
+console.log(Object.prototype.toString.call(b));
+
+var obj = {};
+
+Object.defineProperty('FAV_NUM', {
+  value: 32,
+  writable: false,
+  configurable: false
+});
+
+console.log(obj.FAV_NUM);
