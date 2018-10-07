@@ -21,3 +21,7 @@ Object.defineProperty('FAV_NUM', {
 });
 
 console.log(obj.FAV_NUM);
+
+console.log(-Infinity);
+
+function ArrAdd(arr) {}

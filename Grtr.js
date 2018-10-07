@@ -1,11 +1,21 @@
-(function grt(globl, $) {
+// (function grt(globl, $) {
+//
+//   var Grtr = function(first, last, lang) {
+//     return new Grtr.init(first, last, lang)
+//   }
+//
+//   Grtr.init = function(first, last, lang) {
+//
+//   }
+//
+//
+//
+// })(window, $);
 
-  var Grtr = function(first, last, lang) {
-    return new Grtr.init(first, last, lang)
-  }
+'use strict';
 
-  Grtr.init = function(first, last, lang)
+var grtr = function(name) {
+  console.log('Hey ' + name);
+};
 
-  
-
-})(window, $);
+module.exports = grtr;
